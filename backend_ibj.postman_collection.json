@@ -1,0 +1,574 @@
+{
+	"info": {
+		"_postman_id": "f7592bc1-86a9-4bbe-8cee-c77605f2a91b",
+		"name": "backend_ibj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17884440"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"kk\",\r\n    \"email\":\"jj@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jj@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course_categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"course baru\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/course-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"course-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course_categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/course-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"course-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course_categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"course lama\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/course-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"course-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course_categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/course-categories/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"course-categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"ss2\",\r\n    \"Course_category_id\":3\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"title\":\"ss1update\",\r\n    \"Course_category_id\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTM1NTM4fQ.-sjVV-gppX0gQzYBO839EpU8r3QXlElGbIJ0lvY-Yog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/courses/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"courses",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"user1\",\r\n    \"email\":\"user1@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"user1update\",\r\n    \"email\":\"user1@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"users_id\":2,\r\n    \"course_id\":3\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/user-courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"user-courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/user-courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"user-courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"users_id\":2,\r\n    \"course_id\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/user-courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"user-courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJjcmVhdGVkX2F0IjoxNjc2NTUxMTIwfQ.o3hLIlkAW-g3vLpRt4vF1aBJ265vtDa5f2PVe2wLcmA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/user-courses/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"user-courses",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
